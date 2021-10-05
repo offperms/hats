@@ -1,0 +1,170 @@
+--!nocheck
+
+--#region
+
+local Players: Players = game:GetService("Players")
+local UserInputService: UserInputService = game:GetService("UserInputService")
+local ReplicatedStorage: ReplicatedStorage = game:GetService("ReplicatedStorage")
+local TeleportService: TeleportService = game:GetService("TeleportService")
+
+local LocalPlayer: Player = Players.LocalPlayer
+local PlayerMouse: PlayerMouse = LocalPlayer:GetMouse()
+
+--#endregion
+-- library
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))();
+-- windows
+local Window = Library.CreateLib("hats", "BloodTheme")
+-- tabs
+local Tab = Window:NewTab("Main")
+
+
+-- sections
+
+local MainSection = Tab:NewSection("Main")
+
+
+local function RandomCapitalization(txt)
+    local str = ""
+    for i = 1, string.len(txt), 1 do
+        if math.random(1, 2) == 1 then
+            str = str .. string.upper(string.sub(txt, i, i))
+        else
+            str = str .. string.lower(string.sub(txt, i, i))
+        end
+    end
+    return str
+end
+
+MainSection:NewButton("Rejoin", "Rejoin the place.", function()
+    local PlaceId = game.PlaceId
+    local JobId = game.JobId
+
+    return TeleportService:TeleportToPlaceInstance(PlaceId, JobId, LocalPlayer)
+end)
+
+MainSection:NewButton("loadsyntax", "load lol", function()
+   loadstring(game:HttpGet(('https://raw.githubusercontent.com/Memeboiyot/Syntaxv22/main/gui.md'),true))()
+   end)
+
+MainSection:NewButton("Spiderbothts", "e", function()
+    -- spider bot
+--Syntaxbesthub
+local habies = game.ReplicatedStorage.RemoteFunctions.WearOutfit
+local code = nil
+local args = {
+    Face = "";
+    
+    Hat1 = "1743941933";
+        Hat2 = "1744219293";
+        Hat3 = "18015906";
+        Hat4 = "1744235800";
+        Hat5 = "4585144193";
+        Hat6 = "451220849";
+        Hat7 = "62234425";
+        Hat8 = "4793985219";
+        Hat9 = "4794106130";
+        
+        
+    
+
+    RemoveShirt = false;
+    
+    Pants = "";
+    RPDesc = "";
+    RPName = "";
+    Shirt = "";
+}
+
+habies:InvokeServer(args)
+strength = 30
+
+
+end)
+
+MainSection:NewButton("gunhts", "e", function()
+    -- spider bot
+--Syntaxbesthub
+local habies = game.ReplicatedStorage.RemoteFunctions.WearOutfit
+local code = nil
+local args = {
+    Face = "";
+    
+    Hat1 = "5410482351";
+        Hat2 = "5410643866";
+
+        
+        
+    
+
+    RemoveShirt = false;
+    
+    Pants = "";
+    RPDesc = "";
+    RPName = "";
+    Shirt = "";
+}
+
+habies:InvokeServer(args)
+strength = 30
+
+
+end)
+
+MainSection:NewButton("knufe", "e", function()
+    -- spider bot
+--Syntaxbesthub
+local habies = game.ReplicatedStorage.RemoteFunctions.WearOutfit
+local code = nil
+local args = {
+    Face = "";
+    
+    Hat1 = "7170680556";
+
+
+        
+        
+    
+
+    RemoveShirt = false;
+    
+    Pants = "";
+    RPDesc = "";
+    RPName = "";
+    Shirt = "";
+}
+
+habies:InvokeServer(args)
+strength = 30
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Memeboiyot/Syntaxv22/main/gui.md'),true))()
+
+end)
+
+MainSection:NewButton("shotgun", "e", function()
+    -- spider bot
+--Syntaxbesthub
+local habies = game.ReplicatedStorage.RemoteFunctions.WearOutfit
+local code = nil
+local args = {
+    Face = "";
+    
+    Hat1 = "5064344615";
+
+
+        
+        
+    
+
+    RemoveShirt = false;
+    
+    Pants = "";
+    RPDesc = "";
+    RPName = "";
+    Shirt = "";
+}
+
+habies:InvokeServer(args)
+strength = 30
+
+
+end)
